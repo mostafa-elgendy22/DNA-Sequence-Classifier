@@ -19,7 +19,7 @@ os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inpl
 
 
 # Evaluate the model
-os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/4-model_assessment.ipynb"')
+os.system('jupyter nbconvert --execute --to notebook --inplace "Code/4-model_assessment.ipynb"')
 
 json_file = open('Saved Data/Temp Data/python_model.json', 'r')
 data = json.load(json_file)
@@ -28,12 +28,12 @@ accuracy = data['accuracy']
 precision = data['precision']
 recall = data['recall']
 F1_score = data['f1']
-# AUC_score = data['auc']
+AUC_score = data['auc']
 
 
 json_file.close()
 # os.remove('Saved Data/Temp Data/python_model.json')
-print(f'Python model metrics:\nClassification Accuracy = {round(accuracy * 100, 2)}%\nPrecision = {round(precision * 100, 2)}%\nRecall = {round(recall * 100, 2)}%\nF1 Score = {round(F1_score * 100, 2)}%\n')
+print(f'Python model metrics:\nClassification Accuracy = {round(accuracy * 100, 2)}%\nPrecision = {round(precision * 100, 2)}%\nRecall = {round(recall * 100, 2)}%\nF1 Score = {round(F1_score * 100, 2)}%\nAUC Score = {round(AUC_score, 2)}\n')
 
 
 # Convert the test set from .npy format to .txt format
