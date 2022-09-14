@@ -3,4 +3,8 @@ import numpy as np
 cpp_model_results = np.loadtxt('c++_model.txt')
 python_model_results = np.loadtxt('python_model.txt')
 
-print(f"Number of diffrently classified sequences in the two models is {(cpp_model_results != python_model_results).sum()}")
+different_classified_sequences = (cpp_model_results != python_model_results).sum()
+if different_classified_sequences == 0:
+    print('\nC++ and Python models classified the sequences in the same way.\n')
+else:
+    print(f'\nC++ and Python models classified {different_classified_sequences} sequences in differently.\n')

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Convert a Keras model to frugally-deep format.
 """
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import base64
 import datetime
