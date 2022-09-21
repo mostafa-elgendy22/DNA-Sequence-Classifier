@@ -18,7 +18,7 @@ def save_np_array(x, filename):
         file.write("\n")
 
 X_test = np.load('Saved Data/Test Set/X_test.npy')
-save_np_array(X_test, 'Saved Data/Test Set/X_test.dat')
+save_np_array(X_test, 'Code/C++ Model/Code/data/X_test.dat')
 
 y_test = np.load('Saved Data/Test Set/y_test.npy')
-np.savetxt('Saved Data/Test Set/y_test.dat', y_test, fmt='%d')
+np.savetxt('Code/C++ Model/Code/data/y_test.dat', y_test, fmt='%d')

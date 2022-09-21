@@ -1,6 +1,6 @@
 import numpy as np
 
-cpp_model_results = np.loadtxt('c++_model.txt')
+cpp_model_results = np.loadtxt('../../Code/C++ Model/Code/data/c++_model.txt')
 python_model_results = np.loadtxt('python_model.txt')
 
 different_classified_sequences = (cpp_model_results != python_model_results).sum()

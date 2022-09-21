@@ -19,7 +19,7 @@ os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inpl
 
 
 # Evaluate the model
-os.system('jupyter nbconvert --execute --to notebook --inplace "Code/4-model_assessment.ipynb"')
+os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/4-model_assessment.ipynb"')
 
 json_file = open('Saved Data/Temp Data/python_model.json', 'r')
 data = json.load(json_file)
@@ -36,13 +36,13 @@ json_file.close()
 print(f'Python model metrics:\nClassification Accuracy = {round(accuracy * 100, 2)}%\nPrecision = {round(precision * 100, 2)}%\nRecall = {round(recall * 100, 2)}%\nF1 Score = {round(F1_score * 100, 2)}%\nAUC Score = {round(AUC_score, 2)}\n')
 
 
-# Convert the test set from .npy format to .txt format
+# Convert the test set from .npy format to .dat format
 os.system('python "Saved Data/Test Set/save_test_set.py"')
 
 
 # Convert the Python model to C++ model
 print(Fore.GREEN + 'Converting the Python model into C++ model...' + Style.RESET_ALL)
-os.system('python "Code/C++ Model/keras_export/convert_model.py" "Saved Data/Model Architecture/model.h5" "Saved Data/Model Architecture/model.json"')
+os.system('python "Code/C++ Model/keras_export/convert_model.py" "Saved Data/Model Architecture/model.h5" "Code/C++ Model/Code/data/model.json"')
 
 # Compile the C++ model
 print(Fore.GREEN + '\nCompiling the C++ model...' + Style.RESET_ALL)
