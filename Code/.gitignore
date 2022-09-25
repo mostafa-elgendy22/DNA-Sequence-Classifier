@@ -125,3 +125,4 @@ ui-tests/playwright-report
 
 # VSCode
 .vscode
+../.vscode
