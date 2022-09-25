@@ -4,18 +4,9 @@ import numpy as np
 
 def save_np_array(x, filename):
     file = open(filename, 'w')
-    if len(x.shape) == 1:
-        rows = 1
-        cols = x.shape[0]
-        x = x.reshape(rows, cols)
-    else:
-        rows = x.shape[0]
-        cols = x.shape[1]
-    file.write(f"{rows} {cols}\n")
-    for i in range(rows):
-        for j in range(cols):
-            file.write(f"{x[i][j]} ")
-        file.write("\n")
+    file.write(f"{x.shape[0]}\n")
+    for i in range(x.shape[0]):
+        file.write(f"{x[i]}\n")
 
 X_test = np.load('Saved Data/Test Set/X_test.npy')
 save_np_array(X_test, 'Code/C++ Model/Code/data/X_test.dat')

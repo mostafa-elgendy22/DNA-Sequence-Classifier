@@ -8,10 +8,10 @@ os.system('python "clean.py"')
 os.chdir('..')
 
 # Check if the spectral representation of the dataset is done before
-if not os.path.exists('Saved Data/dna_spectral_representation.npy'):
-    print(Fore.GREEN + 'Pre-precessing the dataset... ' + Style.RESET_ALL)
-    os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/2-pre-processing.ipynb"')
-    print('Pre-precessing done!\n')
+
+print(Fore.GREEN + 'Pre-processing the dataset... ' + Style.RESET_ALL)
+os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/2-pre-processing.ipynb"')
+print('Pre-processing done!\n')
 
 # Train the model
 print(Fore.GREEN + 'Training the model...' + Style.RESET_ALL)

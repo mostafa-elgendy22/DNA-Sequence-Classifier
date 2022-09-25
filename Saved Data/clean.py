@@ -7,6 +7,18 @@ os.mkdir('Model')
 shutil.rmtree('Model Architecture', ignore_errors=True)
 os.mkdir('Model Architecture')
 
+shutil.rmtree('Training Set', ignore_errors=True)
+os.mkdir('Training Set')
+
+if os.path.exists('Test Set/X_test.npy'):
+    os.remove('Test Set/X_test.npy')
+
+if os.path.exists('Test Set/y_test.npy'):
+    os.remove('Test Set/y_test.npy')
+
+if os.path.exists('Test Set/X_test_pre-processed.npy'):
+    os.remove('Test Set/X_test_pre-processed.npy')
+
 if os.path.exists('Predicted Labels/c++_model.txt'):
     os.remove('Predicted Labels/c++_model.txt')
 
