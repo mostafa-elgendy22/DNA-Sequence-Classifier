@@ -41,7 +41,7 @@ The used model is: LeNet5 network like Architecture CNN for Text Classification.
 The model architecture is shown in the following figure.
 
 <p align="center">
-  <img src="Screenshots/DL_model.png" alt="DL_model">
+  <img height="500" src="Screenshots/DL_model.png" alt="DL_model">
 </p>
 
 ## C++ Model
