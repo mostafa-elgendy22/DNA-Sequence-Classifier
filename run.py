@@ -7,19 +7,18 @@ os.chdir('Saved Data')
 os.system('python "clean.py"')
 os.chdir('..')
 
-# Check if the spectral representation of the dataset is done before
-
+# Pre-process the dataset
 print(Fore.GREEN + 'Pre-processing the dataset... ' + Style.RESET_ALL)
-os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/2-pre-processing.ipynb"')
+os.system('python -m nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/2-pre-processing.ipynb"')
 print('Pre-processing done!\n')
 
 # Train the model
 print(Fore.GREEN + 'Training the model...' + Style.RESET_ALL)
-os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/3-model.ipynb"')
+os.system('python -m nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/3-model.ipynb"')
 
 
 # Evaluate the model
-os.system('jupyter nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/4-model_assessment.ipynb"')
+os.system('python -m nbconvert --log-level CRITICAL --execute --to notebook --inplace "Code/4-model_assessment.ipynb"')
 
 json_file = open('Saved Data/Temp Data/python_model.json', 'r')
 data = json.load(json_file)
@@ -65,6 +64,6 @@ os.chdir('../')
 os.system('.\\build\\DNA_Sequence_Classifier_run.exe')
 
 
-# Check if both models acts the same
+# Check if both models classifies the test dataset in the same way
 os.chdir('../../../Saved Data/Predicted Labels')
 os.system('python "compare.py"')
