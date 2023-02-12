@@ -65,7 +65,7 @@ where dna_sequence is one test set item represented as a vector after pre-proces
 The script `run.py` is used to run all the modules of the project including: dataset pre-processing, model training, model evaluation, model conversion to C++ model, compiling the C++ model, building the C++ model using CMake, running the C++ model, and making sure that the Python and C++ models classify the test dataset in the same way.
 
 <p align="center">
-  <img  width="350px" src="Screenshots/pipeline.png" alt="pipeline">
+  <img src="Screenshots/pipeline.png" alt="pipeline">
 </p>
 
 
@@ -93,5 +93,6 @@ The model is evaluated many times on different test subsets and the metrics are 
     <li>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-S14-S9</li>
 </ol>
 
-## contributors 
+## Contributors 
 [![](https://avatars.githubusercontent.com/u/47069045?v=4)](https://github.com/Ahmedh12)
+[![](https://github.com/mostafa-elgendy22.png?size=100)](https://github.com/mostafa-elgendy22)
