@@ -4,7 +4,7 @@
 
 Nowadays, machine learning is used for many applications which are fundamental researches in cheminformatics, bioinformatics, cosmology to quantitative social science, physics, agriculture, computer vision, gaming industry, linguistics etc. 
 
-DNA sequence expresses many information about species which are behaviors, appearance, their parent’s information etc. Those information helps to identify a species separately form other species. Therefore, identifying the DNA Sequence order and their classification is significant need in today. Nowadays the Genetic expression is used frequently in medical sector. It applies to recognize the cancers, down syndrome, mutations, tumors. The goal of DNA sequencing is identifying the order of nucleotides (basic building block of nucleic acid (DNA & RNA)) of a given DNA section. Adenine (A), cytosine (C), guanine (G), and thymine (T) are the four nucleotides that makeup DNA (T). These are called the building blocks of DNA. The DNA of each virus is unique, and the pattern of arrangement of the nucleotides determines the unique characteristics of a virus.
+DNA sequence expresses many information about species which are behaviors, appearance, their parent’s information etc. Those information helps to identify a species separately form other species. Therefore, identifying the DNA Sequence order and their classification is significant need in today. Nowadays the Genetic expression is used frequently in medical sector. It applies to recognize the cancers, down syndrome, mutations, tumors. The goal of DNA sequencing is identifying the order of nucleotides (basic building block of nucleic acid (DNA & RNA)) of a given DNA section. Adenine (A), cytosine (C), guanine (G), and thymine (T) are the four nucleotides that makeup DNA. These are called the building blocks of DNA. The DNA of each virus is unique, and the pattern of arrangement of the nucleotides determines the unique characteristics of a virus.
 
 ## Dataset
 
@@ -31,7 +31,7 @@ Classification tasks are strongly based on the features that represent the objec
 The application of these techniques to DNA classification requires a fixed dimension representation of the sequences like the spectral representation based on k–mers occurrences. The spectral representation has been used in many bioinformatics works in order to obtain a fixed-size vector representation of DNA sequences. Given a fixed value k, a spectral representation is a vector of size 4<sup>k</sup>. Its components are computed by counting the occurrences of small DNA snippets of length k, called k–mers, which are extracted from the genomic sequences by means of a sliding window, with step = 1 and length = k. In case of k–mers containing one or more undefined nucleotides, for example the "N" character, they are discarded. The spectral representation adopts the so called "bag–of–words" model, which does not take into account the position of k–mers in the original sequence. This procedure is summarized in the following figure.
 
 <p align="center">
-  <img  height="350px" width="450px" src="Screenshots/k_mers.png" alt="k_mers">
+  <img  height="350px" width="550px" src="Screenshots/k_mers.png" alt="k_mers">
 </p>
 
 ### Deep Learning Model
@@ -43,6 +43,7 @@ The model architecture is shown in the following figure.
 <p align="center">
   <img height="500" src="Screenshots/DL_model.png" alt="DL_model">
 </p>
+<br>
 
 ## C++ Model
 
@@ -85,5 +86,7 @@ The model is evaluated many times on different test subsets and the metrics are 
 </ol>
 
 ## Contributors 
-[![](https://github.com/Ahmedh12.png?)](https://github.com/Ahmedh12)
-[![](https://github.com/mostafa-elgendy22.png?)](https://github.com/mostafa-elgendy22)
+<ol>
+    <li>Ahmed Hussien: https://github.com/Ahmedh12</li>
+    <li>Mostafa Elgendy: https://github.com/mostafa-elgendy22</li>
+</ol>
