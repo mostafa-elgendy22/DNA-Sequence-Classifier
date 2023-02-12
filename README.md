@@ -1,5 +1,7 @@
 # DNA-Sequence-Classifier
 
+This project is licensed to <a href="https://onelab-eg.com/">ONE Lab Research Group</a>.
+
 ## Introduction to the problem
 
 Nowadays, machine learning is used for many applications which are fundamental researches in cheminformatics, bioinformatics, cosmology to quantitative social science, physics, agriculture, computer vision, gaming industry, linguistics etc. 
