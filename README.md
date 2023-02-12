@@ -87,12 +87,10 @@ The model is evaluated many times on different test subsets and the metrics are 
 
 <ol>
     <li>https://github.com/Dobiasd/frugally-deep</li>
-
     <li>https://www.researchgate.net/publication/305749061_A_Deep_Learning_Approach_to_DNA_Sequence_Classification</li>
-
     <li>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-S14-S9</li>
 </ol>
 
 ## Contributors 
-[![](https://github.com/Ahmedh12.png?size=100)](https://github.com/Ahmedh12)
-[![](https://github.com/mostafa-elgendy22.png?size=100)](https://github.com/mostafa-elgendy22)
+[![](https://github.com/Ahmedh12.png?)](https://github.com/Ahmedh12)
+[![](https://github.com/mostafa-elgendy22.png?)](https://github.com/mostafa-elgendy22)
