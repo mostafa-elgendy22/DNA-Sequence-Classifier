@@ -41,7 +41,7 @@ The used model is: LeNet5 network like Architecture CNN for Text Classification.
 The model architecture is shown in the following figure.
 
 <p align="center">
-  <img  width="350px" src="Screenshots/model.png" alt="model">
+  <img  width="350px" src="Screenshots/DL_model.png" alt="DL_model">
 </p>
 
 ## C++ Model
@@ -54,11 +54,7 @@ Then this object is used to classify the test dataset items.
 
 `auto result = model.predict({fdeep::tensor(fdeep::tensor_shape(static_cast<std::size_t>(dna_sequence.size()), 1), dna_sequence)});`
 
-where dna_sequence is one test set item represented as a vector after pre-processing.
-
-
-## Results
-
+Where dna_sequence is one test set item represented as a vector after pre-processing.
 
 ## Automation Environment
 
