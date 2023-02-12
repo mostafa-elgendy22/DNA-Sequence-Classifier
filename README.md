@@ -15,11 +15,11 @@ https://www.kaggle.com/datasets/nageshsingh/dna-sequence-dataset?select=human.tx
 The following figures shows the distribution of the dataset according to different classes.
 
 <p align="center">
-  <img  width="350px" src="Screenshots/dataset1.png" alt="dataset1">
+  <img src="Screenshots/dataset1.png" alt="dataset1">
 </p>
 <br>
 <p align="center">
-  <img  width="350px" src="Screenshots/dataset2.png" alt="dataset2">
+  <img src="Screenshots/dataset2.png" alt="dataset2">
 </p>
 
 ## System Modules
@@ -94,5 +94,5 @@ The model is evaluated many times on different test subsets and the metrics are 
 </ol>
 
 ## Contributors 
-[![](https://avatars.githubusercontent.com/u/47069045?v=4)](https://github.com/Ahmedh12)
+[![](https://github.com/Ahmedh12.png?size=100)](https://github.com/Ahmedh12)
 [![](https://github.com/mostafa-elgendy22.png?size=100)](https://github.com/mostafa-elgendy22)
