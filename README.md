@@ -19,7 +19,7 @@ The following figures shows the distribution of the dataset according to differe
 </p>
 <br>
 <p align="center">
-  <img src="Screenshots/dataset2.png" alt="dataset2">
+  <img height="400" src="Screenshots/dataset2.png" alt="dataset2">
 </p>
 
 ## System Modules
