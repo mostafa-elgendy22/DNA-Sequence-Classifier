@@ -31,7 +31,7 @@ Classification tasks are strongly based on the features that represent the objec
 The application of these techniques to DNA classification requires a fixed dimension representation of the sequences like the spectral representation based on k–mers occurrences. The spectral representation has been used in many bioinformatics works in order to obtain a fixed-size vector representation of DNA sequences. Given a fixed value k, a spectral representation is a vector of size 4<sup>k</sup>. Its components are computed by counting the occurrences of small DNA snippets of length k, called k–mers, which are extracted from the genomic sequences by means of a sliding window, with step = 1 and length = k. In case of k–mers containing one or more undefined nucleotides, for example the "N" character, they are discarded. The spectral representation adopts the so called "bag–of–words" model, which does not take into account the position of k–mers in the original sequence. This procedure is summarized in the following figure.
 
 <p align="center">
-  <img  height="350px" width="250px" src="Screenshots/k_mers.png" alt="k_mers">
+  <img  height="350px" width="450px" src="Screenshots/k_mers.png" alt="k_mers">
 </p>
 
 ### Deep Learning Model
