@@ -72,12 +72,6 @@ The script `run.py` is used to run all the modules of the project including: dat
 
 The dataset is split by using `sklearn.model_selection.train_test_split` so the test set is not the same in every run of the model. The script `Saved Data/Test Set/save_test_set.py` is used to copy the test set used in Python model evaluation to the C++ project directory so that the two models are tested on the same subset of the dataset.
 
-The model is evaluated many times on different test subsets and the metrics are averaged as shown in the following figure.
-
-<p align="center">
-  <img  width="350px" src="Results/50_iterations.png" alt="pipeline">
-</p>
-
 
 ## References
 
