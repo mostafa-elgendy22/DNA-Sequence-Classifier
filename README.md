@@ -59,23 +59,12 @@ Then this object is used to classify the test dataset items.
 
 Where dna_sequence is one test set item represented as a vector after pre-processing.
 
-## Automation Environment
+## Automated Environment
 
-The script `run.py` is used to run all the modules of the project including: dataset pre-processing, model training, model evaluation, model conversion to C++ model, compiling the C++ model, building the C++ model using CMake, running the C++ model, and making sure that the Python and C++ models classify the test dataset in the same way.
+The script `run.py` is used to run all the modules of the project (i.e. the full pipeline) including: dataset pre-processing, model training, model evaluation, model conversion to C++ model, compiling the C++ model, building the C++ model using CMake, running the C++ model, and making sure that the Python and C++ models classify the test dataset in the same way.
 
 <p align="center">
   <img src="Screenshots/pipeline.png" alt="pipeline">
-</p>
-
-
-## Notes
-
-The dataset is split by using `sklearn.model_selection.train_test_split` so the test set is not the same in every run of the model. The script `Saved Data/Test Set/save_test_set.py` is used to copy the test set used in Python model evaluation to the C++ project directory so that the two models are tested on the same subset of the dataset.
-
-The model is evaluated many times on different test subsets and the metrics are averaged as shown in the following figure.
-
-<p align="center">
-  <img  width="350px" src="Results/50_iterations.png" alt="pipeline">
 </p>
 
 

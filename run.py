@@ -32,7 +32,7 @@ AUC_score = data['auc']
 
 json_file.close()
 # os.remove('Saved Data/Temp Data/python_model.json')
-print(f'Python model metrics:\nClassification Accuracy = {round(accuracy * 100, 2)}%\nPrecision = {round(precision * 100, 2)}%\nRecall = {round(recall * 100, 2)}%\nF1 Score = {round(F1_score * 100, 2)}%\nAUC Score = {round(AUC_score, 2)}\n')
+print(f'Python model metrics:\nClassification Accuracy = {round(accuracy * 100, 2)}%\nPrecision = {round(precision * 100, 2)}%\nRecall = {round(recall * 100, 2)}%\nF1 Score = {round(F1_score, 2)}\nAUC Score = {round(AUC_score, 2)}\n')
 
 
 # Convert the test set from .npy format to .dat format
